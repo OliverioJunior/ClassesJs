@@ -11,7 +11,7 @@ class PokemonService {
       .then(data => data);
     };
      getList() {
-        return fetch(`${this._baseUrl}/pokemon/`)
+        return fetch(`${this._baseUrl}/pokemon?limit=100`)
           .then(response => response.json())
           .then(data => data);
       } 
